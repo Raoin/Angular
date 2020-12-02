@@ -8,7 +8,8 @@ import { Member } from './member';
 })
 export class MembersService { 
 
-private baseURL= "http://localhost:8080/";
+private baseURL= "http://localhost:8080/members";
+//https://cors-anywhere.herokuapp.com/
   constructor(private httpClient: HttpClient) {}
 
   getMembersList(): Observable<Member[]>{

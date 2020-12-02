@@ -23,7 +23,8 @@ export class MemberDetailsComponent implements OnInit {
     private getMembers(){
 
       this.membersService.getMembersList().subscribe(data=> {
-         this.members=data; 
+         //console.log(data);
+           this.members=data; 
       });
             
     }
