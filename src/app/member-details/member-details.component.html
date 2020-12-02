@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+    <h2> Member Details</h2>
+    <div class="panel-heading">
+    </div>
+    <div class="panel-body"></div>
+<table class = "table table-striped">
+    <thead>
+        <tr> 
+            <th>ID</th>
+            <th>FirstName</th> 
+            <th>MiddleName</th>
+            <th>SurName</th>
+            <th>MaritalStatus</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor= "let member of members">
+               <td> {{ member.id }} </td>
+               <td> {{ member.firstname}} </td>
+               <td> {{ member.middlename }} </td>
+               <td> {{ member.surname }} </td>
+               <td> {{ member.maritalstatus}} </td>            
+          </tr>
+      </tbody>
+</table>	
+</div>
+
+
